@@ -1,116 +1,108 @@
-/* 
+/*
+
 Primary Font: Lato
 Secondary Font: Roboto Condensed
 
-Dark Blue - rgb(70, 137, 244)
-Light Blue - rgb(186, 212, 255)
+Dark Blue: rgb(73, 145, 245)
+Light Blue: rgb(153, 190, 242)
 
-'Bold' Orange - rgb(229, 158, 66)
-Light Orange - rgb(255, 227, 191)
+'Bold' Orange: (224, 149, 18)
+Light Orange: rgb(247, 190, 92)
+
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+
+
 */
 .content {
-	animation-name: fade-in;
-	animation-duration: 2s;	
+  animation: fade-in 1s;
 }
 
 .sidebar {
-	animation-name: fade-in;
-	animation-duration: 2s;
+  animation: fade-in 1s;
+}
+body {
+  background: rgba(153, 190, 242, 0.44);
 }
 
 img {
-	width: 400px;
-	height: 200px;
-	transition: 0.5s all;
+  width: 400px;
+  height: 200px;
+  transition: all 0.5s;
 }
 
 img:hover {
-	height: 250px;
-	width: 500px;
+  width: 500px;
+  height: 250px;
 }
 
-body {
-	background: rgba(186, 212, 255, 0.5);
-}
 #main {
-	display: grid;
-	grid-template-columns: 70% 30%;
-	grid-gap: 50px;
-	width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 50px;
 }
 
-p {
-	font-family: 'Lato', sans-serif;
-}
-
+p,
 li {
-	font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
+h1,
+h2,
 a {
-	font-family: 'Lato', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
-
-h1 {
-	font-family: 'Roboto Condensed', sans-serif;
-}
-
-h2 {
-	font-family: 'Roboto Condensed', sans-serif;
-}
-
-.sidebar {
-	background: rgb(255, 227, 191);
-}
-.subtitle {
-
-} 
 
 .image-grid {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .image-grid > img {
-	margin: 10px;
+  margin: 10px;
 }
 
 #image-1 {
-	float: right;
-	margin: 15px;
-	height: 300px;
+  float: right;
+  margin: 15px;
+}
+
+.sidebar {
+  background: rgb(250, 218, 164);
 }
 
 .post {
-	border: 2px solid rgb(229, 158, 66);
-	margin: 10px;
+  border: 1px solid rgb(164, 107, 8);
+  margin: 10px;
 }
 
 .post-title {
-	margin-left: 5px;
+  margin-left: 5px;
 }
 
 .post-text {
-	margin-left: 5px;
-	margin-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .post > a {
-	margin-left: 5px;
-	margin-right: 5px;
-	text-decoration: none;
-	color: rgb(70, 137, 244);
-	transition: 0.5s color;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: rgb(9, 90, 204);
+  transition: color 0.5s;
 }
 
 .post > a:hover {
-	color: rgb(186, 212, 255);
+  color: rgb(153, 190, 242);
 }
 
 @keyframes fade-in {
-	from {opacity: 0;}
-	to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-
