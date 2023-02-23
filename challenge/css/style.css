@@ -59,7 +59,7 @@ a {
   justify-content: center;
 }
 
-.image-grid > img {
+.image-flex > img {
   margin: 10px;
 }
 
